@@ -1,0 +1,111 @@
+body {
+  background: #1b1b1b;
+  margin: 0;
+  font-family: Roboto, Arial, sans-serif;
+}
+
+.page {
+  width: 800px;
+  margin: 45px auto;
+  background: #000000;
+  border: 1px solid #f0f0f0;
+  padding: 30px 0;
+}
+
+.box {
+  width: 710px;
+  margin: 0 auto 34px auto;
+  border-radius: 4px;
+}
+
+.header-box,
+.footer-box {
+  background: #ff6648;
+  text-align: center;
+  color: #d9f5f5;
+}
+
+.header-box {
+  padding: 52px 0 44px 0;
+}
+
+.header-box h1 {
+  margin: 0;
+  font-family: Mali, "Comic Sans MS", cursive;
+  font-size: 54px;
+  font-weight: 500;
+}
+
+.header-box p {
+  margin: 36px 0 0 0;
+  font-family: Mali, "Comic Sans MS", cursive;
+  font-size: 34px;
+  font-weight: 300;
+}
+
+.content-box {
+  background: #f6816e;
+  padding: 42px 0;
+}
+
+.content-box table {
+  width: 470px;
+  margin: 0 auto;
+  border-collapse: collapse;
+}
+
+.content-box th,
+.content-box td {
+  border: 3px solid #000000;
+  padding: 10px;
+  font-size: 17px;
+  line-height: 1.18;
+  color: #000000;
+}
+
+.content-box th {
+  background: #a9cbd9;
+  text-align: center;
+  font-size: 18px;
+  padding-top: 18px;
+  padding-bottom: 18px;
+}
+
+.content-box td {
+  background: #dcdcdc;
+  vertical-align: middle;
+}
+
+.image-cell {
+  width: 120px;
+  padding: 10px;
+}
+
+.image-cell img {
+  width: 105px;
+  height: 105px;
+  border-radius: 10px;
+  object-fit: cover;
+  display: block;
+}
+
+.content-box td:nth-child(2),
+.content-box td:nth-child(3) {
+  width: 62px;
+  text-align: center;
+}
+
+.content-box td:nth-child(4) {
+  width: 225px;
+}
+
+.footer-box {
+  padding: 44px 0;
+}
+
+.footer-box p {
+  margin: 0;
+  font-family: Mali, "Comic Sans MS", cursive;
+  font-size: 36px;
+  font-weight: 300;
+}
