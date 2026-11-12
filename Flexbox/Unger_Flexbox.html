@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flexbox – Product Cards</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #fff;
+      color: #111;
+    }
+
+    .page {
+      max-width: 1022px;
+      margin: 70px auto;
+    }
+
+    h2 {
+      font-size: 21px;
+      margin: 0 0 24px;
+    }
+
+    .display-area {
+      background-color: #f4f4f4;
+      min-height: 580px;
+      padding: 14px 12px;
+    }
+
+    /* The three main Flexbox properties from the exercise */
+    .product-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      align-items: flex-start;
+      align-content: flex-start;
+      background-color: #e9e9e9;
+      border-radius: 9px;
+      padding: 6px 10px;
+    }
+
+    .product-card {
+      flex: 0 1 200px;
+      min-width: 180px;
+      min-height: 108px;
+      margin: 10px;
+      padding: 15px 10px;
+      background-color: #fff;
+      border: 1px solid #e0e0e0;
+      border-radius: 6px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+
+    .product-card h3 {
+      margin: 0 0 14px;
+      font-size: 14px;
+      color: #333;
+    }
+
+    .product-card p {
+      margin: 0;
+      font-size: 12px;
+      line-height: 1.2;
+    }
+
+    .product-card .price {
+      margin-top: 14px;
+      font-size: 16px;
+      font-weight: bold;
+      color: #2775ff;
+    }
+
+    @media (max-width: 1050px) {
+      .page {
+        margin: 35px 20px;
+      }
+    }
+
+    @media (max-width: 460px) {
+      .display-area {
+        min-height: 0;
+      }
+
+      .product-card {
+        flex-grow: 1;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+
+
+    <div class="display-area">
+      <div class="product-container">
+        <div class="product-card">
+          <h3>Product 1</h3>
+          <p>A fantastic item you'll love.</p>
+          <div class="price">$19.99</div>
+        </div>
+
+        <div class="product-card">
+          <h3>Product 2</h3>
+          <p>Another great choice for everyone.</p>
+          <div class="price">$29.99</div>
+        </div>
+
+        <div class="product-card">
+          <h3>Product 3</h3>
+          <p>This product is top-rated by our customers.</p>
+          <div class="price">$39.99</div>
+        </div>
+
+        <div class="product-card">
+          <h3>Product 4</h3>
+          <p>An essential item for your daily needs.</p>
+          <div class="price">$49.99</div>
+        </div>
+
+        <div class="product-card">
+          <h3>Product 5</h3>
+          <p>A must-have for any collection.</p>
+          <div class="price">$59.99</div>
+        </div>
+
+        <div class="product-card">
+          <h3>Product 6</h3>
+          <p>High quality and great value.</p>
+          <div class="price">$69.99</div>
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+</html>
